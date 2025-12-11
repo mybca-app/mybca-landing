@@ -14,6 +14,7 @@
     <PlatformCard
         headingText="Web app"
         descriptionText="Access myBCA from your computer with our web app."
+        targetLink="https://app.mybca.link"
     />
     <PlatformCard
         headingText="Android app"
