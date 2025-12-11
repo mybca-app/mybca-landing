@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ArrowRight from "virtual:icons/heroicons/arrow-right";
+	import ArrowRight from 'virtual:icons/heroicons/arrow-right';
 
 	const {
 		fullHeight = false,
@@ -35,9 +35,9 @@
 				<img src={imageLink} alt={imageAltText} class="object-cover w-full h-full" />
 			</div>
 		{:else}
-		<div class="mt-auto ml-auto">
-			<ArrowRight />
-		</div>
+			<div class="mt-auto ml-auto">
+				<ArrowRight />
+			</div>
 		{/if}
 	</div>
 </a>

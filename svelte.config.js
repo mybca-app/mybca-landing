@@ -15,7 +15,7 @@ const config = {
 			entries: ['*']
 		}
 	},
-	extensions: ['.svelte'],
+	extensions: ['.svelte']
 };
 
 export default config;
