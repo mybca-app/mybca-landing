@@ -1,0 +1,54 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+
+const { frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		{
+			frontmatter.description && (
+				<meta name="description" content={frontmatter.description} />
+			)
+		}
+		<title>{frontmatter.title} • myBCA</title>
+	</head>
+	<body class="bg-mybca-light-bg dark:bg-mybca-dark-bg dark:text-white">
+		<div class="max-w-[80ch] mx-auto p-3">
+			<Header />
+			<main>
+				<a
+					href="/docs"
+					class="flex gap-2 items-center p-3 rounded bg-mybca-light-bg-surface dark:bg-mybca-dark-bg-surface hover:bg-mybca-light-bg-surface-200 hover:dark:bg-mybca-dark-bg-surface-200"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-4"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"></path>
+					</svg>
+
+					Back to support page
+				</a>
+				<article class="prose dark:prose-invert max-w-none my-8">
+					<slot />
+				</article>
+			</main>
+			<Footer />
+		</div>
+	</body>
+</html>

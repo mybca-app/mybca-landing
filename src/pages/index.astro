@@ -1,11 +1,12 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import LandingHeader from "../components/landing/LandingHeader.astro";
+import PlatformCardGrid from "../components/landing/PlatformCardGrid.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="myBCA • the only BCA app you need" description="myBCA is the all-in-one app for students of the Bergen County Academies, with bus notifications, lunch menus, events, and more.">
+	<LandingHeader />
+	<section>
+		<PlatformCardGrid />
+	</section>
 </Layout>

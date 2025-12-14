@@ -1,0 +1,23 @@
+---
+import DocPageLink from "../../components/docs/DocPageLink.astro";
+import Layout from "../../layouts/Layout.astro";
+
+const docPages = Object.values(import.meta.glob("./*.md", { eager: true }));
+---
+
+<Layout
+	title="Support articles"
+	description="Information, frequently asked questions, and privacy policy of myBCA, the all-in-one app for BCA students."
+>
+	<section class="px-3 pb-5 w-full text-center">
+		<h1 class="text-3xl font-serif">myBCA Support</h1>
+	</section>
+
+	<div class="space-y-3">
+		{
+			docPages.map((page: any) => (
+				<DocPageLink name={page.frontmatter.title} description={page.frontmatter.description} link={page.url} />
+			))
+		}
+	</div>
+</Layout>
