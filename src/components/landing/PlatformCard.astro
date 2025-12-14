@@ -1,9 +1,11 @@
 ---
+import { Image } from "astro:assets";
+
 interface Props {
 	rows: number;
 	headingText: string;
 	descriptionText?: string;
-	imageLink?: string;
+	image?: ImageMetadata;
 	imageAltText?: string;
 	targetLink?: string;
 }
@@ -12,7 +14,7 @@ const {
 	rows = 1,
 	headingText,
 	descriptionText = "",
-	imageLink,
+	image: imageLink,
 	imageAltText = "",
 	targetLink = "#",
 } = Astro.props;
@@ -36,10 +38,11 @@ const rowSpanClass =
 		{
 			imageLink ? (
 				<div class="flex grow items-end overflow-hidden">
-					<img
+					<Image
 						src={imageLink}
 						alt={imageAltText}
 						class="object-cover w-full h-full"
+						fetchpriority="high"
 					/>
 				</div>
 			) : (
