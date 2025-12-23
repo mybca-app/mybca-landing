@@ -12,9 +12,9 @@ Please open the Events tab in myBCA and click the link to view the event submiss
 
 ## How do notifications work?
 
-Notifications are only available on our iOS and Android apps.
+Notifications are only available on our iOS and Android apps. In order to use notification functionality, you must enable notifications when prompted upon first launching myBCA.
 
-If you enable notifications upon first launching myBCA, notifications for your starred buses are sent every weekday at 4:10 p.m. Notifications are sent only at 4:10. If your bus has not arrived by 4:10 p.m., a new notification will not be sent; you must check the bus's location manually in the myBCA app. We intend to change this in a future update.
+When you have notifications enabled and one of your starred buses arrives, you will receive a notification with its location.
 
 ## What is the logo design based on?
 
