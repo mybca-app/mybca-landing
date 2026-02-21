@@ -2,7 +2,7 @@
 import DocPageLink from "../../components/docs/DocPageLink.astro";
 import Layout from "../../layouts/Layout.astro";
 
-const docPages = Object.values(import.meta.glob("./*.md", { eager: true }));
+const docPages = Object.values(import.meta.glob("./**/*.md", { eager: true }));
 ---
 
 <Layout

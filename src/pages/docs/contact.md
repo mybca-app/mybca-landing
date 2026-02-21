@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/DocsLayout.astro
-title: Contact us
+title: Contact Us
 description: Get in touch with the myBCA team to report issues or suggestions.
 ---
 
-# Contact us
+# Contact Us
 
 Our email address: [support@mybca.link](mailto:support@mybca.link)
 
